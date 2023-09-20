@@ -3,13 +3,16 @@ spring:
     url:
     username:
     password:
-    driver-class-name:
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto:
-    show-sql:
+      ddl-auto: create-drop
+    show-sql: true
     properties:
       hibernate:
-        format_sql:
-    database:
-    database-platform:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+co:
+  haroldscode:
+    jwt-secret:
